@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advice</title>
+  <!-- tailwind and flowBite  link -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- external css link -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- favIcon link -->
+  <link rel="shortcut icon" href="#" type="image/x-icon">
+
+</head>
+
+<body>
+  <!-- header start 
+    ------------------>
+  <header class="shadow-md fixed top-0 left-0 right-0 bg-gray-900">
+
+
+    <nav class="w-full max-w-7xl mx-auto py-3 md:py-0 bg-white border-gray-200 px-5 md:px-4 rounded dark:bg-gray-900">
+      <div class="container flex flex-wrap items-center justify-between mx-auto">
+        <!-- logo -->
+        <a href="https://flowbite.com/" class="flex items-center">
+          <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">sm Advice</span>
+        </a>
+        <!-- toggle button -->
+        <button data-collapse-toggle="navbar-default" type="button"
+          class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-default" aria-expanded="false">
+          <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"></path>
+          </svg>
+        </button>
+
+        <!-- nav item -->
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul
+            class="flex items-center flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <li>
+              <a href="#"
+                class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
+                aria-current="page">Home</a>
+            </li>
+            <li>
+              <a href="#"
+                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+            </li>
+            <li>
+              <a href="#"
+                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</a>
+            </li>
+            <li>
+              <a href="#"
+                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Pricing</a>
+            </li>
+            <li>
+              <a href="#"
+                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+            </li>
+            <li>
+              <input type="text" id="input-search"
+                class=" hidden md:block w-full py-2.5 pl-5 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="Search...">
+
+            </li>
+            <li>
+              <button id="btn-search" type="button"
+                class="text-white hidden md:block bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mt-3 md:mt-0 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Search</button>
+
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+  </header>
+  <!-- header end 
+    ----------------------->
+
+  <!-- main content start
+    ---------------------- -->
+  <main class="w-full max-w-7xl mx-auto px-6 pt-20">
+    <h1 class="text-center text-2xl my-5">Life is beautiful</h1>
+    <section class="flex justify-center gap-4 flex-col">
+      <input type="text" id="input-mobile"
+        class="block md:hidden w-full py-2.5 pl-5 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+        placeholder="Search...">
+        <button id="mobile-search" type="button"
+          class="text-white block md:hidden  bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mt-3 md:mt-0 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Search</button>
+
+      <div id="advice-container2">
+
+      </div>
+      <hr class="my-5 ">
+      <div id="advice-container" class="advice-container  grid grid-cols-1 md:grid-cols-3 gap-4">
+
+      </div>
+    </section>
+
+
+  </main>
+  <!-- main content end 
+    ---------------------->
+
+  <!-- footer section start 
+    -------------------------->
+  <footer></footer>
+  <!-- footer section end 
+    --------------------------->
+
+  <!-- flowBite JS Link -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
+  <!-- JavaScript
+    ---------------- -->
+  <script src="js/app.js"></script>
+</body>
+
+</html>
